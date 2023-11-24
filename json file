@@ -1,0 +1,92 @@
+[
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": ">",
+                "value": 90
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/pump1",
+                "value": "on"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": ">",
+                "value": 130
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/pump2",
+                "value": "on"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": ">",
+                "value": 180
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/warning_light",
+                "value": "on"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": "<",
+                "value": 90
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/pump1",
+                "value": "off"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": "<",
+                "value": 130
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/pump2",
+                "value": "off"
+            }
+        ]
+    },
+    {
+        "conditions": [
+            {
+                "topic": "tank/level",
+                "comparison": "<",
+                "value": 180
+            }
+        ],
+        "results": [
+            {
+                "topic": "system/warning_light",
+                "value": "off"
+            }
+        ]
+    }
+]
